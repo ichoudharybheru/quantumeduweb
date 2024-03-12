@@ -1,0 +1,133 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html body {
+  overflow-x: hidden;
+}
+
+.homepage_bg {
+  background: url("../src/assets/Images/bghome.svg");
+}
+.companiesList {
+  animation: 3s infinite linear moveCompany;
+  animation-delay: 0s;
+}
+
+@keyframes moveCompany {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -300%;
+  }
+}
+
+.pptop {
+  background: linear-gradient(180deg, #f4f8ff, #fff0);
+}
+.ppbot {
+  background: linear-gradient(0deg, #f4f8ff, #fff0);
+}
+.toturshadow {
+  box-shadow: -30px -29px 0px -3px rgba(0, 0, 0, 0.1);
+}
+
+.coursecard {
+  -webkit-box-shadow: 12px 16px 0px 3px rgba(212, 227, 45, 1);
+  -moz-box-shadow: 12px 16px 0px 3px rgba(212, 227, 45, 1);
+  box-shadow: 12px 16px 0px 3px rgba(212, 227, 45, 1);
+}
+
+.login {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.extra {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.signupbox {
+  box-shadow: 0px 0px 28px 2px rgba(255, 255, 255, 0.99);
+  -webkit-box-shadow: 0px 0px 28px 2px rgba(255, 255, 255, 0.99);
+  -moz-box-shadow: 0px 0px 28px 2px rgba(255, 255, 255, 0.99);
+}
+
+.contactus-error {
+  color: rgb(222, 43, 43);
+}
+.spinner {
+  width: 14px;
+  height: 14px;
+  animation: spinner-o824ag 1s infinite linear;
+}
+
+.spinner div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(253, 255, 253);
+  border-radius: 50%;
+  animation: spinner-vse6n7 10s infinite ease;
+}
+
+.spinner div:nth-child(1) {
+  --rotation: 90;
+}
+
+.spinner div:nth-child(2) {
+  --rotation: 180;
+}
+
+.spinner div:nth-child(3) {
+  --rotation: 270;
+}
+
+.spinner div:nth-child(4) {
+  --rotation: 360;
+}
+
+@keyframes spinner-vse6n7 {
+  0%,
+  100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+    background: rgb(245, 241, 240);
+  }
+
+  90% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(241, 144, 119);
+  }
+  80% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(219, 233, 65);
+  }
+  70% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(94, 210, 65);
+  }
+  60% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+    background: rgb(68, 32, 212);
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(218, 96, 200);
+  }
+  40% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(252, 185, 218);
+  }
+  25% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    background: rgb(173, 227, 159);
+  }
+}
+
+@keyframes spinner-o824ag {
+  to {
+    transform: rotate(360deg);
+  }
+}
